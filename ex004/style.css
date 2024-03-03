@@ -1,0 +1,67 @@
+
+
+div {
+    display: block;
+    background-color: rgba(212, 192, 230, 0.808);
+    text-align: center;
+}
+
+.main-header {
+    height: 100px;
+    background-color: blueviolet;
+    margin: 2%;
+
+}
+
+.main-nav {
+    height: 100px;
+    background-color: blueviolet;
+    margin: 2%;
+}
+
+.main-aside-left {
+    float: left;
+    width: 200px;
+    height: 200px;
+    background-color: blueviolet;
+    margin: 2%;
+    text-align: center;
+}
+
+aside.container.main-aside-right {
+    float: right;
+    width: 200px;
+    height: 200px;
+    background-color: blueviolet;
+    margin: 2%;
+    justify-content: center;
+    
+}
+
+.main-content {
+    float: left;
+    width: calc(60% - 20px);
+}
+
+.clearfix {
+    clear: both;
+}
+
+.carousel {
+    height: 100px;
+    overflow: scroll;
+}
+
+.carousel > div {
+    width: 1000000px;
+}
+
+.carousel > div > div {
+    float: left;
+}
+
+.main-footer {
+    height: 80px;
+    background-color: blueviolet;
+    margin: 2%;
+}

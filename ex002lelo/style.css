@@ -1,0 +1,261 @@
+ @charset "UTF-8";
+
+body {
+    background-color: rgba(255, 255, 255, 0.89);
+    font-family: sans-serif;
+    margin: 0px;
+}
+
+#logo {
+    width: 100px;
+    float: left;
+}
+
+header {
+    max-width: 1000px;
+    margin: auto;
+}
+
+header::after {
+    content: "";
+    width: calc(100% + 200px);
+    margin-left: -100px;
+    display: block;
+    border-bottom: 1px solid rgb(221, 221, 221);
+    margin-top: 10px;
+}
+
+header > a img {
+    height: 100px;
+    width: 100px;
+    margin-right: 0px;
+    padding: 0px;
+}
+
+nav {
+    float: right;
+    margin-top: 36px;
+}
+
+nav > a {
+    display: inline-block;
+    text-align: center;
+    padding: 5px 20px;
+    color: rgb(88, 88, 94);
+    text-decoration: none;
+    line-height: 30px;
+    border-radius: 5px;
+
+}
+nav > a:first-child {
+    font-weight: bold;
+}
+
+nav > a:last-child {
+    background-color: rgb(218, 39, 39);
+    color: white;
+}
+
+.clearfix {
+    clear: both;
+}
+
+main {
+    min-width: 500px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+h2 {
+    font-size: 3.2em;
+}
+
+.text-center {
+    text-align: center;
+}
+
+div.botao {
+    text-align: center;
+    background-color: rgb(255, 55, 55);
+    color: white;
+    width: 100px;
+    height: 20px;
+    border-radius: 10px;
+    margin: auto;
+    padding: 10px;
+}
+
+.foto {
+    width: 100%;
+}
+
+.destaque-home > div {
+    float: left;
+    width: 230px;
+    height: 230px;
+    margin-right: 24px;
+    border: 1px solid #ebebeb;
+}
+
+.destaque-home > div:hover {
+    box-shadow: 3px 5px 20px rgb(233 233 233);
+}
+
+.destaque-home > div:last-child {
+    float: right;
+    margin: 0;
+}
+
+.melhoresuashabilidades .about {
+    width: 400px;
+    float: right;
+    padding-top: 126px;
+}
+
+.nossos-parceiros {
+    text-align: center;
+}
+
+.nossos-parceiros > .empresa {
+    width: calc(20% - 4px);
+    height: 100px;
+    background-color: red;
+    float: left;
+    margin: 2px;
+}
+
+.contadores-home {
+    background-color: black;
+    padding: 50px 0px;
+}
+
+.contadores-home .item {
+    display: inline-block;
+    background-color: red;
+    width: calc(25% - 5px);
+    height: 100px;
+}
+
+.contadores-home > div{
+    width: 1000px;
+    margin: auto;
+}
+
+.categorias {
+    text-align: center;
+}
+
+.categorias > .nossocurso {
+    display: inline-block;
+    width: calc(25% - 10px);
+    height: 20px;
+    margin-right: 24px;
+    margin-bottom: 10px;
+    border: 1px solid #ebebeb;
+    padding: 50px 0px;
+}
+
+.principaiscursos {
+    text-align: center;
+}
+
+.principaiscursos > .curso {
+    display: inline-block;
+    width: calc(25% - 10px);
+    height: 200px;
+    margin-right: 24px;
+    margin-bottom: 20px;
+    border: 1px solid #ebebeb;
+    padding: 50px 0px;
+}
+
+.navegarcursos {
+    text-align: center;
+    background-color: rgb(255, 55, 55);
+    color: white;
+    width: 100px;
+    height: 20px;
+    border-radius: 10px;
+    margin: auto;
+    padding: 10px;
+}
+
+.clearfix {
+    overflow: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}    
+
+.paragrafo {
+    width: 400px;
+    height: 400px;
+    padding-left: 250px;
+    
+}
+ul {
+    list-style-type: '\2714\0020\0020';
+    columns: 2;
+    list-style-position: inside;
+    padding-left: 0;
+}
+
+.imagem {
+    float: right;
+}
+
+.carreira {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.carreira > h1 {
+    font-size: 1em;
+}
+.carreira > h2 {
+    font-size: 2.2em;
+    
+}
+.join {
+    display: inline-block;
+    width: 30%;
+    height: 100px;
+    margin-right: 24px;
+    margin-bottom: 20px;
+    border: 1px solid #ebebeb;
+    padding: 50px 0px;
+}
+
+.instructor {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.instructor > h1 {
+    font-size: 1em;
+}
+
+.instructor > h2 {
+    font-size: 2.2em;
+}
+
+.profissional {
+    display: inline-block;
+    width: 25%;
+    height: 300px;
+    margin-right: 24px;
+    margin-bottom: 20px;
+    border: 1px solid #ebebeb;
+    padding: 50px 0px;
+
+}
+
+.members {
+    text-align: center;
+    background-color: rgb(255, 55, 55);
+    color: white;
+    width: 100px;
+    height: 20px;
+    border-radius: 10px;
+    margin: auto;
+    padding: 10px;
+}
