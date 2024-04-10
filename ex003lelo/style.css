@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            scrollbar-color: #8750f7 #2a1454;
+        }
+
+        body {
+            font-size: 16px;
+            font-family: "Sora", sans-serif;
+            font-weight: 400;
+            min-height: 100%;
+            overflow-x: hidden;
+        }
+
+        #container header{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            flex-wrap: nowrap;
+            padding: 40px 0 20px;
+            width: 100%;
+            
+        }
+
+
+        ul:before > li > a {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 3px;
+            bottom: 0;
+            left: 0;
+            background-color: #000;
+            visibility: hidden;
+            -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+            -webkit-transition: all 0.3s ease-in-out 0s;
+            transition: all 0.3s ease-in-out 0s;
+        }
+        ul:hover > li > a {
+            text-transform: var(#2a1454 #8750f7);
+        }
+        
+        .hire:hover {
+            background: linear-gradient(90deg, #2a1454, #8750f7, #8750f7);
+            transition: 2s ease-in-out;
+        }
+        
+        .menu-principal {
+            display:flex;
+            align-items: center;
+            margin-top: 10px;
+            height: 50px;
+            padding: 10px;
+            color: #2a1454;
+
+        }
+
+        
+        
+        .menu > ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+            color:#2a1454;
+        
+        }
+
+        .menu-item {
+            position: relative;
+            color: #2a1454;
+            text-decoration: none;
+        }
+
+        .menu-item:hover {
+            color: #2a1454;
+        }
+
+        .menu-item::before {
+            content: "";
+            position: absolute;
+            display: block;
+            width: 100%;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: #2a1454;
+            transform: scaleX(0);
+            transform-origin: top left;
+            transition: transform 0.3s ease;
+        }
+
+        .menu-item:hover::before {
+            transform: scaleX(1);
+        }
+        
+        .hire {
+            display: flex;
+            background-image: linear-gradient(to right, #8750f7 0%, #2a1454 51%, #8750f7 100%);
+            border-radius: 100px;
+            height: 50px;
+            width: 150px;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            text-transform: capitalize;
+            border: none;
+            transition: 0.4s;
+        }
+
+        .hire > a{
+            color: white;
+        }
+
+        .cor::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 322px;
+            height: 308px;
+            border-radius: 50%;
+            background: linear-gradient(260deg, #2a1454 0%, rgba(115, 67, 210, 0) 100%);
+            filter: blur(150px);
+            margin-right: -5%;
+            margin-top: -5%;
+            z-index: -1;
+        }
+
+        .conteudo {
+            display: block;
+        }
+
+        .conteudo-1{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+            margin: 0 auto;
+        }
+
+        .conteudo-escrito {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            order: 1 1 1;
+        }
+
+        span {
+            color: #2a1454;
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 10px;
+
+        }
+
+        .hero-title {
+            background: linear-gradient(to right, #8750f7 0%, #2a1454);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 700;
+            font-size: 60px;
+        }
+
+        .conteudo-escrito > p {
+            font-size: 20px;
+            font-weight: 300;
+            width: 100%;
+            max-width: 550px;
+        }
+
+        .button-download {
+            display: flex;
+            align-items: center;
+            margin-top: 50px;
+            gap: 25px;
+        }
+
+        .download:hover {
+            background-color: #8750f7;
+        }
+
+        .button-download:hover > a {
+            color: white;
+        
+        }
+
+        .icons:hover > li {
+            background-color: #8750f7;
+        }
+
+        i:hover {
+            color: white;
+        }
+
+        .download {
+            text-decoration: none;
+            font-size: 15px;
+            line-height: 1;
+            font-weight: 500;
+            color: #8750f7;
+            border: 1px solid #8750f7;
+            border-radius: 50px;
+            padding: 17px 35px;
+            transition: 0.3s;
+            letter-spacing: 1px;
+        }
+
+        .icons {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        .icons > li > a {
+            font-size: 15px;
+            line-height: 1;
+            font-weight: 400;
+            color: #8750f7;
+            border: 1px solid #8750f7;
+            border-radius: 50%;
+            padding: 50%;
+            transition: 0.3s;
+            letter-spacing: 1px;
+        }
+
+
+        img {
+            max-width: 100%;
+            vertical-align: middle;
+            
+        }
+        .conteudo-foto {
+            position: relative;
+            border: 2px solid #f6f3fc;
+            border-radius: 38px;
+            transform: rotate(4.29deg);
+            position: relative;
+            transition: 0.3s;
+            text-align: center;
+        }
+
+        .conteudo-foto:hover {
+            transform: rotate(0);
+        }
+
+        .conteudo-foto::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            background: linear-gradient(260deg, #8750f7 0%, rgba(115, 67, 210, 0) 100%);
+            filter: blur(150px);
+            margin-left: -5%;
+            margin-bottom: -5%;
+            
+        }
+
+        .contagem {
+            display: flex;
+            max-width: 100%;
+            margin-left: 100px;
+            margin-bottom: 100px;
+            margin-top: 70px;
+            padding: 10px;
+        }
+
+        .numero {
+            font-size: 64px;
+            font-weight: 700;
+            color: #8750f7;
+            width: 25%;
+            height: 78px;
+            margin: 20px;
+        }
+
+        .texto {
+            display: inline-block;
+            font-size: 17px;
+            font-weight: 400;
+            
+        }
+
+        .container {
+            background-color: #f6f3fc;
+            width: 100%;
+        }
+
+        .services {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+        }
+
+        .services > h2 {
+            background: linear-gradient(to right, #8750f7 0%, #2a1454);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 700;
+            font-size: 50px;
+            margin-top: 40px;
+            padding: 20px;
+        }
+
+        .services > p {
+            color: #2a1454;
+            margin-bottom: 20px;
+            text-align: center;
+            width: 50%;
+        }
+
+        .services-itens {
+            display: flex;
+            background-color: #f6f3fc;
+            justify-content: center;
+            max-width: 100%;
+
+        }
+
+        .caixa-itens {
+            display: flex;
+            color: #8750f7;
+            margin: 0 auto;
+            width: 80%;
+            align-items: center;
+            justify-content: center;
+            
+        }
+
+        .services-item1 {
+            display: flex;
+            width: 30%;
+            height: 120px;
+            align-items: center;
+        }
+
+        .services-item1 > span {
+            color: #8750f7;
+            font-size: 20px;
+            font-weight: 700;
+            width: 10%;
+            margin-right: 20px;
+        }
+
+        .services-item1 > h3 {
+            font-size: 30px;
+            font-weight: 700;
+            width: 100%;
+        }
+
+        .services-text {
+            font-size: 17px;
+            font-weight: 400;
+            color: #2a1454;
+            margin-left: 100px;
+            margin-right: 100px;
+            width: 46%;
+        }
+
+        .services-itens:hover {
+            background-image: linear-gradient(to right, #8750f7 0%, #2a1454 51%, #8750f7 100%);
+        }
+
+        .services-itens:hover > div > div{
+            color: white;
+        }
